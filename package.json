@@ -14,7 +14,7 @@
         "git-msg": "printf \"Message: \" && read MSG && echo \"${MSG}\" > .msg",
         "git-add": "npm run git-msg && git add --all",
         "git-commit": "npm run git-add && git commit -m \"$(cat .msg)\"",
-        "git-publish": "npm run git-commit && lerna version --conventional-commits --release github",
+        "git-publish": "npm run git-commit && lerna version --conventional-commits --create-release github",
         "git-release-github": "npm run git-commit && lerna version --conventional-commits --release github",
         "add-repository": "npx lerna-cli import",
         "bootstrap": "lerna bootstrap",
