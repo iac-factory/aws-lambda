@@ -10,9 +10,9 @@ git clone https://github.com/iac-factory/aws-lambda.git
 npm run install
 ```
 
-## `npm` Publication ##
+## Releases ##
 
-In order to successfully publish updated package(s):
+In order to successfully publish updated package(s) to the `npm` registry:
 
 ```shell
 cd "$(git rev-parse --show-toplevel)" && npm run publish
