@@ -1,8 +1,8 @@
 {
     "name": "aws-lambda",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
+    "version": "0.0.0",
+    "description": "AWS Lambda Function Package(s) for [`iac-factory`](https://github.com/iac-factory)",
+    "private": true,
     "scripts": {
         "help": "npx lerna-cli --help",
         "clean": "npx lerna-cli clean --yes",
@@ -14,12 +14,9 @@
         "bootstrap": "npx lerna-cli bootstrap",
         "install": "npm run clean && npm run bootstrap"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/iac-factory/aws-lambda.git"
-    },
-    "author": "",
-    "license": "ISC",
+    "repository": "https://github.com/iac-factory/aws-lambda.git",
+    "author": "Jacob B. Sanders",
+    "license": "BSD-2-Clause",
     "bugs": {
         "url": "https://github.com/iac-factory/aws-lambda/issues"
     },
