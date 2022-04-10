@@ -1,7 +1,7 @@
 {
     "name": "lambda-archive",
     "private": false,
-    "version": "0.3.46",
+    "version": "0.3.47",
     "type": "module",
     "types": "index.d.ts",
     "description": "AWS Lambda Layer Constructor + Archiver",
