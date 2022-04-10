@@ -12,8 +12,7 @@
         "list": "lerna list",
         "add": "npx lerna-cli add",
         "msg": "printf \"Message: \" && export MSG=\"$(read MSG && echo \"${MSG}\")\"",
-        "commit": "git add . && npm run msg && git commit -m \"${MSG}\"",
-        "//version": "lerna version --conventional-commits --create-release \"github\"",
+        "commit": "git add . && npm run msg && git commit -m \"${MSG}\" && lerna version",
         "add-repository": "npx lerna-cli import",
         "bootstrap": "lerna bootstrap",
         "install": "npm run clean && npm run bootstrap"
