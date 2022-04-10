@@ -14,13 +14,9 @@
     "author": "Jacob B. Sanders",
     "main": "index.ts",
     "scripts": {
-        "postinstall": "tsc",
         "prestart": "tsc",
-        "build": "tsc",
-        "start": "ts-node .",
-        "watch": "tsc --watch",
-        "prepublishOnly": "tsc --pretty",
-        "publish": "npm publish --access public"
+        "postinstall": "tsc",
+        "prepublishOnly": "tsc --pretty"
     },
     "dependencies": {
         "@swc/core": "latest",

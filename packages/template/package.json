@@ -14,8 +14,9 @@
 		"directory": "packages/template"
 	},
 	"scripts": {
+        "prestart": "tsc",
 		"postinstall": "tsc",
-		"prepublishOnly": "tsc"
+		"prepublishOnly": "tsc --pretty"
 	},
 	"dependencies": {
 		"ts-lambda": "latest"
