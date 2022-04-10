@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.83](https://github.com/iac-factory/aws-lambda/compare/ts-lambda-template@0.4.81...ts-lambda-template@0.4.83) (2022-04-10)
+
+**Note:** Version bump only for package ts-lambda-template
+
+
+
+
+
 ## [0.4.81](https://github.com/iac-factory/aws-lambda/compare/ts-lambda-template@0.4.80...ts-lambda-template@0.4.81) (2022-04-10)
 
 **Note:** Version bump only for package ts-lambda-template
