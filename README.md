@@ -10,6 +10,14 @@ git clone https://github.com/iac-factory/aws-lambda.git
 npm run install
 ```
 
+## `npm` Publication ##
+
+In order to successfully publish updated package(s):
+
+```shell
+cd "$(git rev-parse --show-toplevel)" && npm run publish
+```
+
 ## Notice - Package Naming ##
 
 Located in the [`./packages`](./packages) folder, there contains various
