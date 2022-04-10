@@ -3,7 +3,6 @@
     "version": "0.0.0",
     "type": "module",
     "description": "AWS Lambda Function Package(s) for [`iac-factory`](https://github.com/iac-factory)",
-    "private": true,
     "scripts": {
         "help": "lerna --help",
         "clean": "lerna clean --yes",
