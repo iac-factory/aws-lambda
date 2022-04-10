@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"type": "module",
 	"types": "index.d.ts",
-	"description": "ESM Lambda Handler + Functions Template",
+	"description": "ECMA Lambda Handler + Functions Template",
 	"license": "BSD-2-Clause",
 	"author": "Jacob B. Sanders",
 	"repository": {
