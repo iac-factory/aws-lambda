@@ -10,7 +10,7 @@
         "link": "npx lerna-cli link",
         "list": "npx lerna-cli list",
         "add": "npx lerna-cli add",
-        "preversion": "git add --all && git commit --message",
+        "preversion": "eval scripts/git-commit.bash",
         "version": "npx lerna-cli version",
         "add-repository": "npx lerna-cli import",
         "bootstrap": "npx lerna-cli bootstrap",
