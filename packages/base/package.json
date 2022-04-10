@@ -1,0 +1,35 @@
+{
+	"name": "ts-lambda",
+	"version": "0.3.17",
+	"lockfileVersion": 3,
+	"requires": true,
+	"license": "BSD-2-Clause",
+	"author": "Jacob B. Sanders",
+	"type": "module",
+	"main": "index.js",
+	"types": "index.d.ts",
+	"repository": {
+		"url": "https://github.com/iac-factory/ts-lambda.git",
+		"type": "git",
+		"directory": "/"
+	},
+	"peerDependencies": {
+		"@tsconfig/esm": "latest",
+		"@types/aws-lambda": "latest",
+		"@types/node": "latest",
+		"typescript": "latest"
+	},
+	"dependencies": {
+		"aws-lambda": "latest"
+	},
+	"workspaces": {
+		"packages": [
+			"**/**"
+		],
+		"nohoist": [
+			"**/.ci/**",
+			"**/**",
+			"**"
+		]
+	}
+}

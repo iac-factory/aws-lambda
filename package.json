@@ -1,0 +1,30 @@
+{
+    "name": "aws-lambda",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "help": "npx lerna-cli --help",
+        "clean": "npx lerna-cli clean --yes",
+        "info": "npx lerna-cli info",
+        "link": "npx lerna-cli link",
+        "list": "npx lerna-cli list",
+        "add": "npx lerna-cli add",
+        "add-repository": "npx lerna-cli import",
+        "bootstrap": "npx lerna-cli bootstrap",
+        "install": "npm run clean && npm run bootstrap"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/iac-factory/aws-lambda.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/iac-factory/aws-lambda/issues"
+    },
+    "homepage": "https://github.com/iac-factory/aws-lambda#readme",
+    "devDependencies": {
+        "lerna": "^4.0.0"
+    }
+}

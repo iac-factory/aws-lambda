@@ -1,0 +1,13 @@
+{
+    "extends": "@tsconfig/esm",
+    "ts-node": {"esm": true},
+    "compilerOptions": {
+        "lib": ["ESNext"],
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "allowSyntheticDefaultImports": true,
+        "diagnostics": true
+    },
+    "exclude": ["**/*.template.ts"]
+}

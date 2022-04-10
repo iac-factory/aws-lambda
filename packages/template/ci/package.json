@@ -1,0 +1,42 @@
+{
+    "name": "@local/ci-cd",
+    "private": true,
+    "version": "0.0.0",
+    "type": "commonjs",
+    "types": "index.d.ts",
+    "main": "index.js",
+    "description": "Utilities",
+    "license": "BSD-2-Clause",
+    "author": "Jacob B. Sanders",
+    "scripts": {
+        "build": "tsc --pretty",
+        "compile": "tsc --watch",
+        "postinstall": "npm run build",
+        "prepublishOnly": "npm run test",
+        "upload": "npm publish --access public",
+        "report": "npx serve -- coverage/src",
+        "rm-declarations": "find . -name '*.d.ts' -type f -delete",
+        "rm-declaration-maps": "find . -name '*.d.ts.map' -type f -delete",
+        "rm-maps": "find . -name '*.js.map' -type f -delete",
+        "rm-compilations": "find . -name '*.js' -type f -delete",
+        "rm-modules": "rm -rf node_modules",
+        "pretest": "npm install",
+        "test": "node --experimental-vm-modules $(command -v jest) --config jest.config.js --injectGlobals",
+        "clean": "npm run rm-declarations && npm run rm-declaration-maps && npm run rm-maps && npm run rm-compilations && npm run rm-modules"
+    },
+    "peerDependencies": {
+        "serve": "latest"
+    },
+    "devDependencies": {
+        "@types/jest": "latest",
+        "ts-jest": "latest",
+        "ts-node": "latest",
+        "tslib": "latest",
+        "@nodelib/fs.scandir": "latest",
+        "@nodelib/fs.walk": "latest",
+        "@tsconfig/esm": "latest"
+    },
+    "dependencies": {
+        "ts-lambda-template": ".."
+    }
+}

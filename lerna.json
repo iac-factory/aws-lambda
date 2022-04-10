@@ -1,0 +1,12 @@
+{
+    "packages": [
+        "packages/*"
+    ],
+    "workspaces": [],
+    "useWorkspaces": false,
+    "command": {},
+    "ignoreChanges": [],
+    "npmClientArgs": [],
+    "npmClient": "npm",
+    "version": "independent"
+}

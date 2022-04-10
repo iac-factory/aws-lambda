@@ -1,0 +1,18 @@
+{
+    "extends": "@tsconfig/esm",
+    "ts-node": {"esm": true},
+    "compilerOptions": {
+        "lib": ["ESNext"],
+        "target": "ESNext",
+        "module": "ESNext",
+        "allowJs": true,
+        "checkJs": true,
+        "sourceMap": true,
+        "declaration": true,
+        "diagnostics": true,
+        "incremental": true,
+        "inlineSources": false,
+        "moduleResolution": "Node",
+        "allowSyntheticDefaultImports": true
+    }
+}
