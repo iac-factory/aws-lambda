@@ -15,8 +15,8 @@
 	},
 	"scripts": {
 		"postinstall": "tsc",
-		"publish": "npm publish --access public"
-	},
+        "prepublishOnly": "tsc"
+    },
 	"dependencies": {
 		"ts-lambda": "latest"
 	},
@@ -24,5 +24,5 @@
 		"@tsconfig/esm": "latest",
 		"esbuild": "latest"
 	},
-	"gitHead": "c47f51eee873e0e3f527b8e547e21f154c596839"
+	"gitHead": "13136459e829171c71c9cf86b1a191162ad5229a"
 }
