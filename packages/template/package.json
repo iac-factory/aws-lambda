@@ -1,20 +1,20 @@
 {
 	"name": "ts-lambda-template",
 	"private": false,
-	"version": "0.1.7",
-    "main": "index.js",
+	"version": "0.1.8",
+	"main": "index.js",
 	"type": "module",
 	"types": "index.d.ts",
 	"description": "ESM Lambda Handler + Functions Template",
 	"license": "BSD-2-Clause",
 	"author": "Jacob B. Sanders",
-    "repository": {
-        "url": "https://github.com/iac-factory/aws-lambda.git",
-        "type": "git",
-        "directory": "packages/template"
-    },
+	"repository": {
+		"url": "https://github.com/iac-factory/aws-lambda.git",
+		"type": "git",
+		"directory": "packages/template"
+	},
 	"dependencies": {
-        "ts-lambda": "latest"
+		"ts-lambda": "latest"
 	},
 	"devDependencies": {
 		"@tsconfig/esm": "latest",

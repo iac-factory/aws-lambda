@@ -10,7 +10,8 @@
         "link": "npx lerna-cli link",
         "list": "npx lerna-cli list",
         "add": "npx lerna-cli add",
-        "version": "eval scripts/git-commit.bash || true && npx lerna-cli version",
+        "commit": "eval scripts/git-commit.bash",
+        "version": "true && npx lerna-cli version",
         "add-repository": "npx lerna-cli import",
         "bootstrap": "npx lerna-cli bootstrap",
         "install": "npm run clean && npm run bootstrap"
