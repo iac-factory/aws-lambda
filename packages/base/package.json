@@ -1,6 +1,6 @@
 {
 	"name": "ts-lambda",
-	"version": "0.4.30",
+	"version": "0.4.31",
 	"lockfileVersion": 3,
 	"requires": true,
 	"license": "BSD-2-Clause",
@@ -15,8 +15,8 @@
 	},
 	"scripts": {
 		"postinstall": "tsc",
-        "prepublishOnly": "tsc --pretty",
-        "publish": "npm publish --access public"
+		"prepublishOnly": "tsc --pretty",
+		"publish": "npm publish --access public"
 	},
 	"peerDependencies": {
 		"@tsconfig/esm": "latest",
