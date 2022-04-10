@@ -11,6 +11,8 @@
         "link": "lerna link",
         "list": "lerna list",
         "add": "npx lerna-cli add",
+        "prepublish": "npm run git-publish",
+        "publish": "lerna run publish",
         "git-msg": "printf \"Message: \" && read MSG && echo \"${MSG}\" > .msg",
         "git-add": "npm run git-msg && git add --all",
         "git-commit": "npm run git-add && git commit -m \"$(cat .msg)\"",

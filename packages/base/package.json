@@ -14,7 +14,9 @@
 		"directory": "packages/base"
 	},
 	"scripts": {
-		"postinstall": "tsc"
+		"postinstall": "tsc",
+        "prepublishOnly": "tsc --pretty",
+        "publish": "npm publish --access public"
 	},
 	"peerDependencies": {
 		"@tsconfig/esm": "latest",
