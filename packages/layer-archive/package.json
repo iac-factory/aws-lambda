@@ -1,0 +1,39 @@
+{
+    "name": "lambda-archive",
+    "private": false,
+    "version": "0.3.38",
+    "type": "module",
+    "types": "index.d.ts",
+    "description": "AWS Lambda Layer Constructor + Archiver",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/iac-factory/aws-lambda.git",
+        "directory": "packages/layer-archive"
+    },
+    "license": "BSD-2-Clause",
+    "author": "Jacob B. Sanders",
+    "main": "index.ts",
+    "scripts": {
+        "prestart": "tsc --pretty",
+        "start": "ts-node .",
+        "watch": "tsc --watch",
+        "upload": "tsc && npm publish --access public",
+        "link": "npm i && tsc && npm link",
+        "build": "tsc --pretty"
+    },
+    "dependencies": {
+        "@tsconfig/esm": "latest",
+        "@types/archiver": "latest",
+        "@types/node": "latest",
+        "@swc/core": "latest",
+        "@swc/helpers": "latest",
+        "archiver": "latest",
+        "typescript": "latest",
+        "ts-node": "latest",
+        "tslib": "latest"
+    },
+    "devDependencies": {},
+    "bin": {
+        "lambda-archive": "index.ts"
+    }
+}
