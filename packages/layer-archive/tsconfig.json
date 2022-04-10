@@ -3,6 +3,7 @@
     "ts-node": {
         "swc": true,
         "transpileOnly": true,
+        "emit": false,
         "files": true,
         "experimentalReplAwait": true,
         "esm": true

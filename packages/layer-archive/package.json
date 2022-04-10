@@ -14,12 +14,13 @@
     "author": "Jacob B. Sanders",
     "main": "index.ts",
     "scripts": {
-        "prestart": "tsc --pretty",
+        "postinstall": "tsc",
+        "prestart": "tsc",
+        "build": "tsc",
         "start": "ts-node .",
         "watch": "tsc --watch",
-        "upload": "tsc && npm publish --access public",
-        "link": "npm i && tsc && npm link",
-        "build": "tsc --pretty"
+        "prepublishOnly": "npm install",
+        "upload": "npm publish --access public"
     },
     "dependencies": {
         "@tsconfig/esm": "latest",
