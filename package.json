@@ -1,6 +1,7 @@
 {
     "name": "aws-lambda",
-    "version": "0.0.0",
+    "version": "0.1.1",
+    "type": "module",
     "description": "AWS Lambda Function Package(s) for [`iac-factory`](https://github.com/iac-factory)",
     "private": true,
     "scripts": {
@@ -10,7 +11,7 @@
         "link": "npx lerna-cli link",
         "list": "npx lerna-cli list",
         "add": "npx lerna-cli add",
-        "version": "eval scripts/git-commit.bash",
+        "commit": "eval scripts/git-commit.bash",
         "release": "eval scripts/release.bash",
         "add-repository": "npx lerna-cli import",
         "bootstrap": "npx lerna-cli bootstrap",
@@ -24,6 +25,10 @@
     },
     "homepage": "https://github.com/iac-factory/aws-lambda#readme",
     "devDependencies": {
-        "lerna": "^4.0.0"
-    }
+        "conventional-changelog": "latest",
+        "conventional-changelog-cli": "latest",
+        "lerna": "latest",
+        "lerna-cli": "latest"
+    },
+    "dependencies": {}
 }
