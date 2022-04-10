@@ -72,4 +72,6 @@ configuration.json
 
 nodejs
 
+.msg
+
 lerna-debug.log
