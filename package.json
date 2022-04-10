@@ -1,20 +1,23 @@
 {
     "name": "aws-lambda",
-    "version": "0.1.1",
+    "version": "0.0.0",
     "type": "module",
     "description": "AWS Lambda Function Package(s) for [`iac-factory`](https://github.com/iac-factory)",
     "private": true,
     "scripts": {
-        "help": "npx lerna-cli --help",
-        "clean": "npx lerna-cli clean --yes",
-        "info": "npx lerna-cli info",
-        "link": "npx lerna-cli link",
-        "list": "npx lerna-cli list",
+        "help": "lerna --help",
+        "clean": "lerna clean --yes",
+        "info": "lerna info",
+        "link": "lerna link",
+        "list": "lerna list",
         "add": "npx lerna-cli add",
-        "commit": "eval scripts/git-commit.bash",
+        "git-add": "git add --all",
+        "git-commit": "npm run git-add && npm run msg && git commit --message \"${MSG}\"",
+        "msg": "printf \"Message: \" && export MSG=\"$(read MSG && echo \"${MSG}\")\"",
+        "patch": "lerna version patch --message ${MSG}",
         "release": "eval scripts/release.bash",
         "add-repository": "npx lerna-cli import",
-        "bootstrap": "npx lerna-cli bootstrap",
+        "bootstrap": "lerna bootstrap",
         "install": "npm run clean && npm run bootstrap"
     },
     "repository": "https://github.com/iac-factory/aws-lambda.git",
@@ -27,8 +30,7 @@
     "devDependencies": {
         "conventional-changelog": "latest",
         "conventional-changelog-cli": "latest",
-        "lerna": "latest",
+        "lerna": "^5.1.1",
         "lerna-cli": "latest"
-    },
-    "dependencies": {}
+    }
 }

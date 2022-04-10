@@ -1,6 +1,6 @@
 {
 	"name": "ts-lambda",
-	"version": "0.3.23",
+	"version": "0.3.24",
 	"lockfileVersion": 3,
 	"requires": true,
 	"license": "BSD-2-Clause",
@@ -12,6 +12,9 @@
 		"url": "https://github.com/iac-factory/aws-lambda.git",
 		"type": "git",
 		"directory": "packages/base"
+	},
+	"scripts": {
+		"postinstall": "tsc"
 	},
 	"peerDependencies": {
 		"@tsconfig/esm": "latest",
