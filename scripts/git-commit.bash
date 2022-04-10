@@ -1,6 +1,6 @@
 #!/usr/bin/env bash --posix
 
-echo -n "Pre-Version Git Commit Message: "
+echo -n "Commit Message: "
 
 read MESSAGE && git add --all
 
