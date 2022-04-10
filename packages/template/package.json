@@ -1,7 +1,7 @@
 {
 	"name": "ts-lambda-template",
 	"private": false,
-	"version": "0.4.79",
+	"version": "0.4.80",
 	"main": "index.js",
 	"type": "module",
 	"types": "index.d.ts",
@@ -14,7 +14,7 @@
 		"directory": "packages/template"
 	},
 	"scripts": {
-        "prestart": "tsc",
+		"prestart": "tsc",
 		"postinstall": "tsc",
 		"prepublishOnly": "tsc --pretty"
 	},
